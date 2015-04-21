@@ -1,2 +1,3 @@
-# CTFwriteups
-My modest CTF writeups
+# CTF writeups
+
+Team reference: https://ctftime.org/team/12160
