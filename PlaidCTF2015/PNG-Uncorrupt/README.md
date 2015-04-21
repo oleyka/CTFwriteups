@@ -1,7 +1,8 @@
 # Forensics (150 pts)
-We received this PNG file, but we're a bit concerned the transmission may have not quite been perfect.
+We received [this PNG file](http://play.plaidctf.com/files/corrupt_735acee15fa4f3be8ecd0c6bcf294fd4.png), but we're a bit concerned the transmission may have not quite been perfect.
 
-File: [see the corrupt png](http://play.plaidctf.com/files/corrupt_735acee15fa4f3be8ecd0c6bcf294fd4.png) or pull it from this writeup.
+---
+Note: you can [pull the file](corrupt_735acee15fa4f3be8ecd0c6bcf294fd4.png) from this writeup.
 
 ---
 
@@ -9,7 +10,7 @@ File: [see the corrupt png](http://play.plaidctf.com/files/corrupt_735acee15fa4f
 
 1. Opening the file in hex editor immediately revealed that the header was missing the 5th bit in the header (0x0D). After we added it, the file became partially readable ([see work1.png](work1.png)).
 
-2. However, the IDAT chunks were all corrupted. Some had extra bytes, others had 1-3 bytes missing. To even get the viewer to proceed to the next chunk we had to make sure that the previous one contained a correct CRC. A simple C program based on http://www.libpng.org/pub/png/spec/1.1/PNG-CRCAppendix.html allowed to insert corrected CRC sums.
+2. However, the IDAT chunks were all corrupted. Some had an extra byte while others had 1-3 bytes missing. To even get the viewer to proceed to the next chunk we had to make sure that the previous one contained a correct CRC. A simple C program based on http://www.libpng.org/pub/png/spec/1.1/PNG-CRCAppendix.html allowed to insert corrected CRC sums.
 
 3. We also noticed, that adding the missing bytes was somewhat restoring the picture, to the point that it would be easy to spot if there was any text in it ([see work3.png](work3.png)).
 
