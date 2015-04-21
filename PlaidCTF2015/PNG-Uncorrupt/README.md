@@ -1,7 +1,7 @@
 # Forensics (150 pts)
 We received this PNG file, but we're a bit concerned the transmission may have not quite been perfect.
 
-File: http://play.plaidctf.com/files/corrupt_735acee15fa4f3be8ecd0c6bcf294fd4.png
+File: [see the corrupt png](http://play.plaidctf.com/files/corrupt_735acee15fa4f3be8ecd0c6bcf294fd4.png) or pull it from this writeup.
 
 ---
 
@@ -23,10 +23,10 @@ File: http://play.plaidctf.com/files/corrupt_735acee15fa4f3be8ecd0c6bcf294fd4.pn
 
 Yes, that's right... you see the itail of letter "g", the curly blraces and the words "have_a_.....". Now if we could only figure out what those words are! Ok, the third word looks something like... "wonderful"!
 
-6. We still needed the last word. By this time I was already almost swearing and my eyes were hurting from staring too hard at that bright visual noise... The word had to be about 7-9 letters long. The name of the game from which the screenshot was taken? Google says it's StarCraft. The first two letters of the word do ineed look like "st". And look at those thin shades at the bottom of the text! 
+6. We still needed the last word. By this time I was already almost swearing and my eyes were hurting from staring too hard at that bright visual noise... The word had to be about 7-9 letters long. The name of the game from which the screenshot was taken? Google says it's StarCraft. The first two letters of the word do indeed look like "st". And look at those thin shades at the bottom of the text! They are almost like Morse code... 
 
 ![alt tag](work7.png)
 
-They are like Morse code... and they fit "starcraft" exactly, plus one more letter! The remaining letter has a mid-size footprint, wider than "t", larrower than "o"... must be an "s"!
+... and they fit "starcraft" exactly, plus one more letter! The remaining letter has a mid-size footprint, wider than "t", narrower than "o"... must be an "s"!
 
 7. And *flag{have_a_wonderful_starcrafts}* it is! :)
