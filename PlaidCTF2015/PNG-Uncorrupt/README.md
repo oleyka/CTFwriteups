@@ -22,7 +22,7 @@ Note: you can [pull the file](corrupt_735acee15fa4f3be8ecd0c6bcf294fd4.png) from
 
 ![alt tag](work6.png)
 
-Yes, that's right... you see the itail of letter "g", the curly blraces and the words "have_a_.....". Now if we could only figure out what those words are! Ok, the third word looks something like... "wonderful"!
+Yes, that's right... you see the tail of letter "g" from "flag", the curly braces and the words "have_a_.....". Now if we could only figure out what those words are! Ok, the third word looks something like... "wonderful"!
 
 6. We still needed the last word. By this time I was already almost swearing and my eyes were hurting from staring too hard at that bright visual noise... The word had to be about 7-9 letters long. The name of the game from which the screenshot was taken? Google says it's StarCraft. The first two letters of the word do indeed look like "st". And look at those thin shades at the bottom of the text! They are almost like Morse code... 
 
