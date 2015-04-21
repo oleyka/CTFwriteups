@@ -7,7 +7,7 @@ File: http://play.plaidctf.com/files/corrupt_735acee15fa4f3be8ecd0c6bcf294fd4.pn
 
 ## Solution
 
-1. Opening the file in hex editor immediately revealed that the header was missing the 5th bit in the header (0x0D). After we added it, the file became partially readable (see work1.png).
+1. Opening the file in hex editor immediately revealed that the header was missing the 5th bit in the header (0x0D). After we added it, the file became partially readable (see ![alt tag](work1.png)).
 
 2. However, the IDAT chunks were all corrupted. Some had extra bytes, others had 1-3 bytes missing. To even get the viewer to proceed to the next chunk we had to make sure that the previous one contained a correct CRC. A simple C program based on http://www.libpng.org/pub/png/spec/1.1/PNG-CRCAppendix.html allowed to insert corrected CRC sums.
 
